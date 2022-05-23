@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #feffff;
+  cursor: pointer;
+  span {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    span {
+      font-size: 10px;
+    }
+  }
+}
+.checked {
+  background-color: #def2f1;
+}
+.card_win {
+  background-color: #3aafa9;
+}
+.free_slot {
+  span {
+    color: #3aafa9;
+  }
+  background-color: transparent;
+}
