@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bingo-app/static/css/main.85be131a.css",
+    "main.js": "/bingo-app/static/js/main.a189de03.js",
+    "static/js/787.179b936f.chunk.js": "/bingo-app/static/js/787.179b936f.chunk.js",
+    "index.html": "/bingo-app/index.html",
+    "main.85be131a.css.map": "/bingo-app/static/css/main.85be131a.css.map",
+    "main.a189de03.js.map": "/bingo-app/static/js/main.a189de03.js.map",
+    "787.179b936f.chunk.js.map": "/bingo-app/static/js/787.179b936f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85be131a.css",
+    "static/js/main.a189de03.js"
+  ]
+}
