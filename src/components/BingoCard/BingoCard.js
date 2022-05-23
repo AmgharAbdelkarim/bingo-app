@@ -9,8 +9,7 @@ const BingoCard = ({ title, onClick, checked, isCardWon, idx }) => {
         [styles.card_win]: isCardWon,
         [styles.free_slot]: idx === 12
       })}
-      onClick={onClick}
-    >
+      onClick={onClick}>
       <span>{title}</span>
     </div>
   );
