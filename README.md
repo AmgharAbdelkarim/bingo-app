@@ -1,4 +1,4 @@
-# Bingo application.
+# Bingo application
 
 ## Introduction
 
@@ -19,7 +19,7 @@ This project was started using [create-react-app](https://github.com/facebook/cr
 
 ### Eslint
 
-Eslint is shipped in by default in react-create-app. However, you can customisize your rules in the `.eslintrc` file. 
+Eslint is shipped in by default in react-create-app. However, you can customisize your rules in the `.eslintrc` file.
 
 I integrated `Prettier` with the project as unifed formatting tool. It automatically format code on save.
 
@@ -29,4 +29,3 @@ I integrated `Prettier` with the project as unifed formatting tool. It automatic
 npm install
 npm start
 ```
-

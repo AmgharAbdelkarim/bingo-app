@@ -10,6 +10,7 @@ const shuffledData = shuffle(confTopicData);
 const App = () => {
   const [checked, setChecked] = useState({ 12: true });
   const [winingCards, setWiningCards] = useState({});
+  const [bingos, setBingos] = useState(localStorage.getItem('bingos') || 0);
 
   const data = [...shuffledData.slice(0, 12), 'CONF CALL BINGO', ...shuffledData.slice(12)];
 
@@ -25,10 +26,15 @@ const App = () => {
 
   useEffect(() => {
     if (ref.current.winingCardLength < Object.keys(winingCards).length) {
+      setBingos((bingos) => parseInt(bingos) + 1);
       reward();
     }
     ref.current.winingCardLength = Object.keys(winingCards).length;
   }, [Object.keys(winingCards).length]);
+
+  useEffect(() => {
+    localStorage.setItem('bingos', bingos);
+  }, [bingos]);
 
   const isWin = (data) => {
     const isRow = range
@@ -66,6 +72,10 @@ const App = () => {
 
   return (
     <div id="rewardId" className={styles.app}>
+      <div className={styles.multiple_win}>
+        <span>Bingos :</span>
+        <span>{bingos}</span>
+      </div>
       <div className={styles.title}>
         <h1>
           Bingo<span>Conference Call</span>

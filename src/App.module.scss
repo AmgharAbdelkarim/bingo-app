@@ -68,3 +68,17 @@
     grid-gap: 8px;
   }
 }
+.multiple_win {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  span {
+    text-align: center;
+    text-transform: uppercase;
+    color: #3aafa9;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #000;
+  }
+}
